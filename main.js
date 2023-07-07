@@ -20,8 +20,6 @@ search_button.addEventListener("click", () => {
        <h1>${data[0].capital}</h1>
        <span>${data[0].region}</span>
        `;
-        
-
       });
   }
 });
