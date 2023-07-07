@@ -11,5 +11,8 @@ body{
 }
 .wrapper{
     display: flex;
-    
+}
+.container .result_img{
+    width: 150px;
+    margin-top: 1rem;
 }
