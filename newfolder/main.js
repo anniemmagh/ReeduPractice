@@ -48,3 +48,22 @@
 // //     },
 // // }
 // // console.log(obj.isMarried.status)
+
+async function data() { 
+    try{
+await fetch('https://jsonplaceholder.typicode.com/users')
+.then(Response => Response.json())
+.then((result)=>{
+    result.forEach(users => {
+        const container = document.querySelector('.container');
+        const li = document.createElement('li')
+        li.innerHTML =users.name;
+        container.appendChild(li);
+    });
+})
+
+    }catch(error){
+        alert(error)
+    }
+ }
+ data();
